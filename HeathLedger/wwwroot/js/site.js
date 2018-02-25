@@ -3,4 +3,9 @@ $('.message a').click(function () {
     $('form').animate({ height: "toggle", opacity: "toggle" }, "slow");
 });
 
-console.log(document.getElementById("password").value);
+function buttonclick() {
+    var string = "<%=Name%>";
+    document.writeln(string);
+
+
+}  
