@@ -1,0 +1,42 @@
+﻿@page
+@model HeathLedger.Pages.HomeModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Styles Conference</title>
+    <link rel="stylesheet" href="assets/stylesheets/style.css">
+    <script type="text/javascript" src="effect.js"></script>
+</head>
+
+<body>
+    <div class="login-page">
+        <div class="form">
+            <form class="register-form">
+                <input type="text" placeholder="name" />
+                <input type="password" placeholder="password" />
+                <input type="text" placeholder="email address" />
+                <button>create</button>
+                <p class="message">Already registered? <a href="#">Sign In</a></p>
+            </form>
+            <form class="login-form">
+                <input type="text" placeholder="username" id="username"/>
+                <input type="password" placeholder="password" id= "password"/>
+                <button>login</button>
+                <p class="message">Not registered? <a href="#">Create an account</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+
+
+</html>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
